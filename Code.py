@@ -16,7 +16,7 @@ knn.fit(x_train=x_train,y_train=y_train)
 
 y_pred = knn.predict(np.array(x_test).reshape(len(x_test), len(x_test[0])))
 
-print(accuracy_score(y_test,y_pred))
+print("Accuracy:- " , round((accuracy_score(y_test,y_pred) * 100), 2), "%")
 
 
 
